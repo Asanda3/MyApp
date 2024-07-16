@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./singin-page.component.scss']
 })
 export class SinginPageComponent {
+isLoggedIn: any;
+onSubmit() {
+throw new Error('Method not implemented.');
+}
+form: any;
+isLoginFailed: any;
+errorMessage: any;
 
 }
