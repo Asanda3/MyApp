@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class SinginPageComponent {
 isLoggedIn: any;
+roles: any;
 onSubmit() {
 throw new Error('Method not implemented.');
 }

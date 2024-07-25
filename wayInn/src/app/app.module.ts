@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { SinginPageComponent } from './pages/singin-page/singin-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SignUpPageComponent } from './pages/SignUpPage/SignUpPage.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    SinginPageComponent
+    SinginPageComponent,
+    SignUpPageComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
