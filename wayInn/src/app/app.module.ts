@@ -8,6 +8,11 @@ import { SinginPageComponent } from './pages/singin-page/singin-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SignUpPageComponent } from './pages/SignUpPage/SignUpPage.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { NumbersContentComponent } from './pages/numbers-content/numbers-content.component';
+import { NumberGameComponent } from './pages/number-game/number-game.component';
+import { SecondNumberGameComponent } from './pages/second-number-game/second-number-game.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
     LandingPageComponent,
     SinginPageComponent,
     SignUpPageComponent,
-    HomepageComponent
+    HomepageComponent,
+    ToolbarComponent,
+    NavbarComponent,
+    NumbersContentComponent,
+    NumberGameComponent,
+    SecondNumberGameComponent
   ],
   imports: [
     BrowserModule,
