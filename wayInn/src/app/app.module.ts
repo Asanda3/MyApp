@@ -25,12 +25,14 @@ import { SecondNumberGameComponent } from './pages/second-number-game/second-num
     NavbarComponent,
     NumbersContentComponent,
     NumberGameComponent,
-    SecondNumberGameComponent
+    SecondNumberGameComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
