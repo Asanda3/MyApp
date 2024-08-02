@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-homepage',
@@ -7,5 +8,10 @@ import { Component } from '@angular/core';
 })
 export class HomepageComponent {
 currentUser: any;
+
+constructor(private router:Router){}
+  navigateToNumberContent(){
+    this.router.navigate(['/numbers-content'])
+  }
 
 }

@@ -15,7 +15,7 @@ const routes: Routes = [
 
   { path: "", redirectTo: '/landing-page', pathMatch: 'full' },
   { path: 'landing-page', component: LandingPageComponent },
-  { path: 'singin-page', component: SinginPageComponent },
+  { path: 'singin', component: SinginPageComponent },
   { path: 'signUpPage', component: SignUpPageComponent },
   { path: 'homepage', component: HomepageComponent },
   { path: 'numbers-content', component: NumbersContentComponent},

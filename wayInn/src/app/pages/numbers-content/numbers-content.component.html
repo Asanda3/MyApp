@@ -2,7 +2,6 @@
     <!-- Heading -->
     <h1 class="text-4xl font-extrabold text-gray-800 mb-6 text-center">Click on Any Number to Hear and Learn!</h1>
 
-
     <!-- Card Container -->
     <div class="bg-white p-8 rounded-lg shadow-xl flex flex-wrap justify-center gap-6 mb-6">
         <kbd (click)="playSound(0)" class="kbd text-3xl px-6 py-3 bg-teal-100 text-teal-800 border border-teal-300 rounded-lg shadow-md font-bold">0</kbd>
@@ -16,11 +15,10 @@
         <kbd (click)="playSound(8)" class="kbd text-3xl px-6 py-3 bg-pink-100 text-pink-800 border border-pink-300 rounded-lg shadow-md font-bold">8</kbd>
         <kbd (click)="playSound(9)" class="kbd text-3xl px-6 py-3 bg-gray-100 text-gray-800 border border-gray-300 rounded-lg shadow-md font-bold">9</kbd>
         <kbd (click)="playSound(10)" class="kbd text-3xl px-6 py-3 bg-indigo-100 text-indigo-800 border border-indigo-300 rounded-lg shadow-md font-bold">10</kbd>
-      </div>
-      
+    </div>
     
     <!-- Button below the container -->
-    <button [routerLink]="'/number-game'" class="bg-blue-800 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out mt-6 min-w-[200px]">
+    <button (click)="navigateToNumberGame()" class="bg-blue-800 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out mt-6 min-w-[200px]">
         START LEARNING!
     </button>
 </div>

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'; // Import FormsModule
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // Import FormsModule
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +14,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NumbersContentComponent } from './pages/numbers-content/numbers-content.component';
 import { NumberGameComponent } from './pages/number-game/number-game.component';
 import { SecondNumberGameComponent } from './pages/second-number-game/second-number-game.component';
+import {  HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,8 @@ import { SecondNumberGameComponent } from './pages/second-number-game/second-num
     AppRoutingModule,
     NgbModule,
     FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
     
   ],
   providers: [],
