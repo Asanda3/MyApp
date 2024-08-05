@@ -10,7 +10,7 @@ export class LandingPageComponent {
   constructor(private router: Router) {}
 
   navigateToSignInPage() {
-    this.router.navigate(['/singin-page']);
+    this.router.navigate(['/singin']);
   }
 
 }

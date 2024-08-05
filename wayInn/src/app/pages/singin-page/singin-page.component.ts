@@ -42,6 +42,7 @@ export class SinginPageComponent {
       );
     }
   }
+  
 
   navigateToSignUpPage(): void {
     this.router.navigate(['/signUpPage']);
