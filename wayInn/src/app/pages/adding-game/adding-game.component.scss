@@ -1,0 +1,54 @@
+/* Apply a basic reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Optional background color */
+    
+  }
+  
+  /* Container for all patterns */
+  .pattern-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all patterns horizontally */
+    gap: 20px; /* Space between rows */
+    padding: 20px;
+  }
+  
+  /* Style each pattern */
+  .pattern {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between elements within the pattern */
+  }
+  
+  /* Style the kbd elements */
+  .kbd {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    font-family: monospace;
+  }
+  
+  /* Container for the number input */
+  .number-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style the input field */
+  .number-input {
+    background-color: #e0e0e0;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    width: 4em; /* Adjust width as needed */
+    text-align: center; /* Center text inside the input */
+  }
+  

@@ -1,9 +1,17 @@
-<div class="h-screen bg-cover bg-center flex justify-center items-center">
+<div class="h-screen bg-cover bg-center flex justify-center items-center" style="background-image: url('https://i.pinimg.com/564x/7a/ab/d2/7aabd22f48d9787aa63f5b6c42057870.jpg');">
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="max-w-sm">
     <div class="bg-white px-10 py-8 rounded-xl shadow-md">
-      <img class="h-14 mb-4 mx-auto" src="https://www.synointcdn.com/wp-content/uploads/2019/04/Amazon-Logo-PNG.png" alt="">
-      <div class="space-y-4">
-        <h1 class="text-center text-2xl font-semibold text-gray-600">Sign In</h1>
+      <!-- Avatar Container -->
+      <div class="avatar-container mb-4 flex justify-center">
+        <div class="w-24 rounded-full overflow-hidden">
+          <img src="https://app-cdn.acelitchi.com/prod/app/2022/12/16/wwUxCLTSynu0Zja.webp" alt="User Avatar" class="object-cover w-full h-full"/>
+        </div>
+      </div>
+      
+      <!-- Sign In Text -->
+      <h1 class="text-center text-2xl font-semibold text-gray-600">Sign In</h1>
+      
+      <div class="space-y-4 mt-4">
         <div>
           <label for="email" class="block mb-1 text-gray-600 font-semibold">Email</label>
           <input type="text" id="email" formControlName="email" class="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full" />
@@ -18,14 +26,12 @@
           Sign In
         </button>
         
-        
         <p class="mt-4 text-sm text-center text-gray-400">
           Don't have an account? 
           <a (click)="navigateToSignUpPage()" class="text-indigo-400 focus:outline-none focus:underline focus:text-indigo-500 dark:focus:border-indigo-800">
             Sign Up
           </a>.
         </p>
-        
       </div>
     </div>
   </form>

@@ -7,6 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent {
+navigateToAdding() {
+  this.router.navigate(['/adding-game'])
+}
 currentUser: any;
 
 constructor(private router:Router){}

@@ -11,6 +11,11 @@ export class ToolbarComponent implements OnInit {
   showToolbar: boolean = true;
 
   constructor(private router: Router) { }
+ 
+
+  goHome() {
+    this.router.navigate(['/homepage']); // Navigates to the homepage
+  }
 
   ngOnInit() {
     this.router.events.pipe(
@@ -23,7 +28,7 @@ export class ToolbarComponent implements OnInit {
   checkToolbarVisibility() {
     const currentRoute = this.router.url;
     // Adjust these paths as needed
-    const hiddenRoutes = ['/landing-page', '/singin-page', '/SignUpPage'];
+    const hiddenRoutes = ['/landing-page', '/singin', '/signUpPage'];
     
     this.showToolbar = !hiddenRoutes.includes(currentRoute);
   }

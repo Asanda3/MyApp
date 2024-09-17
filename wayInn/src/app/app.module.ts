@@ -15,6 +15,8 @@ import { NumbersContentComponent } from './pages/numbers-content/numbers-content
 import { NumberGameComponent } from './pages/number-game/number-game.component';
 import { SecondNumberGameComponent } from './pages/second-number-game/second-number-game.component';
 import {  HttpClientModule } from '@angular/common/http';
+import { AddingGameComponent } from './pages/adding-game/adding-game.component';
+
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import {  HttpClientModule } from '@angular/common/http';
     NumbersContentComponent,
     NumberGameComponent,
     SecondNumberGameComponent,
+    AddingGameComponent,
+  
     
   ],
   imports: [

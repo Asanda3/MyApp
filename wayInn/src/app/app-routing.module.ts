@@ -7,6 +7,7 @@ import { NumberGameComponent } from './pages/number-game/number-game.component';
 import { SinginPageComponent } from './pages/singin-page/singin-page.component';
 import { SignUpPageComponent } from './pages/SignUpPage/SignUpPage.component';
 import { SecondNumberGameComponent } from './pages/second-number-game/second-number-game.component';
+import { AddingGameComponent } from './pages/adding-game/adding-game.component';
 
 
 
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'numbers-content', component: NumbersContentComponent},
   { path: 'number-game', component: NumberGameComponent },
   {path:'second-game', component:SecondNumberGameComponent},
-  {path: "**", redirectTo: 'landing-page'} // Wildcard route for a 404 page
+  {path: "**", redirectTo: 'landing-page'} ,// Wildcard route for a 404 page
+  {path: 'adding-game', component:AddingGameComponent}
 ];
 
 

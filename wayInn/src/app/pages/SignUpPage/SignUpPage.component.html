@@ -1,6 +1,12 @@
 <div class="h-screen bg-cover bg-center flex justify-center items-center">
   <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()" class="max-w-sm">
     <div class="bg-white px-10 py-8 rounded-xl shadow-md">
+       <!-- Avatar Container -->
+      <div class="avatar-container mb-4 flex justify-center">
+        <div class="w-24 rounded-full overflow-hidden">
+          <img src="https://app-cdn.acelitchi.com/prod/app/2022/12/16/wwUxCLTSynu0Zja.webp" alt="User Avatar" class="object-cover w-full h-full"/>
+        </div>
+      </div>
       <img class="h-14 mb-4 mx-auto" src="https://www.synointcdn.com/wp-content/uploads/2019/04/Amazon-Logo-PNG.png" alt="">
       <div class="space-y-4">
         <h1 class="text-center text-2xl font-semibold text-gray-600">Sign Up</h1>
